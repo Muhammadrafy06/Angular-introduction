@@ -10,4 +10,11 @@ import { CommonModule } from '@angular/common';
 })
 export class App {
   protected readonly title = signal('angular-introduction');
+  boolMessaggio = true;
+
+
+  mostraMessaggio()
+  {
+    this.boolMessaggio = !this.boolMessaggio;
+  }
 }
