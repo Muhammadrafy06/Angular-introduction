@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, Input, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -9,6 +9,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.css'
 })
 export class App {
+
+  @Input() testo = '';
   protected readonly title = signal('angular-introduction');
   boolMessaggio = true;
 
